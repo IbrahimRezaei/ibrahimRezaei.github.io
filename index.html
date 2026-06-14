@@ -3,7 +3,7 @@
 <head>
     <meta name="google-site-verification" content="lqsOz-FLX1YtTtm7TThBNPDlh1n5Ww6TOFaNxAblliM" />
     <meta charset="UTF-8">
-       <title>وب‌سایت رسمی ابراهیم رضایی - مدرس دانشگاه کاتب</title>
+    <title>وب‌سایت رسمی ابراهیم رضایی - مدرس دانشگاه کاتب</title>
     
     <!-- فونت استاندارد و فوق‌العاده زیبای وزیرمتن -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
@@ -33,19 +33,18 @@
         }
     </script>
 
-<style>
-       <img src="https://hits.sh/ibrahimrezaei.github.io.svg?style=flat-square&label=بازدید&color=007ec6" alt="Visitors"> 
-    body {
-        scroll-behavior: smooth;
-        background-image: url('background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-family: 'Vazirmatn', sans-serif;
-        color: #2b2b2b;
-    }
-             /* افکت شیشه‌ای نیمه شفاف برای کادر شناور اسلایدر شبیه به عکس ارسالی */
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Vazirmatn', sans-serif;
+            color: #2b2b2b;
+        }
+        /* افکت شیشه‌ای نیمه شفاف برای کادر شناور اسلایدر شبیه به عکس ارسالی */
         .glass-panel {
             background: rgba(255, 255, 255, 0.94);
             backdrop-filter: blur(8px);
@@ -69,11 +68,9 @@
         }
     </style>
 </head>
-<body class="font-vazir text-katebText overflow-x-hidden">
-<div style="text-align:center; margin:10px;">
-    <img src="https://hits.sh/ibrahimrezaei.github.io.svg?style=flat-square&label=بازدید&color=007ec6" alt="Visitors">
-</div>
-    <!-- نوار بالایی سایت (Top Bar) - دقیقاً مطابق ساختار و رنگ نوار بالای تصویر ارسالی -->
+<body>
+
+    <!-- نوار بالایی سایت (Top Bar) -->
     <div class="bg-katebGreen text-white text-xs py-2 border-b border-katebGold">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center space-x-reverse space-x-4">
@@ -99,9 +96,9 @@
             
             <!-- لوگو و آیکون ترازوی عدالت / کتاب نماد حقوق و آموزش دانشگاه کاتب -->
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-katebGreen/10 rounded-full flex justify-center items-center text-katebGreen text-2xl shadow-inner">
-                  <img src="Profile.jpg" alt="Profile.jpg" style="width: 300px; height: 80px; border-radius:50 %; object-fit: cover; display: block; margin: 10px auto;">
-                    <i class="fa-solid fa-scale-balanced"></i>
+                <div class="w-12 h-12 bg-katebGreen/10 rounded-full flex justify-center items-center text-katebGreen text-2xl shadow-inner relative">
+                    <i class="fa-solid fa-scale-balanced absolute z-0"></i>
+                    <img src="Profile.jpg" alt="Profile" class="w-full h-full rounded-full object-cover relative z-10 error-hide" onerror="this.style.display='none'">
                 </div>
                 <div>
                     <h1 class="text-lg md:text-xl font-black text-katebGreen tracking-tight">وب‌سایت رسمی ابراهیم رضایی</h1>
@@ -140,14 +137,12 @@
         </div>
     </header>
 
-    <!-- بخش بنر اصلی با تصویر پس‌زمینه دانشگاهی و کادر شناور سفید (دقیقاً شبیه به ساختار عکس کاتب کانون نخبگان) -->
+    <!-- بخش بنر اصلی -->
     <section class="relative h-[480px] md:h-[550px] bg-slate-800 flex items-center justify-center overflow-hidden">
-        <!-- تصویر پس‌زمینه با تم دانشگاه کاتب و افکت ملایم تاریکی برای خوانایی عالی -->
         <div class="absolute inset-0 bg-cover bg-center opacity-40 scale-105 transition-transform duration-[10000ms] hover:scale-100" 
              style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920&auto=format&fit=crop');">
         </div>
         
-        <!-- کادر سفید شناور نیمه‌شفاف در مرکز اسلایدر (همانند تصویر نمونه شما) -->
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <div class="glass-panel p-8 md:p-14 rounded-lg border-2 border-white max-w-3xl mx-auto animate-fade-in">
                 <span class="text-katebGold text-xs md:text-sm font-black uppercase tracking-widest block mb-3">عضو هیات علمی دانشکده حقوق</span>
@@ -163,7 +158,6 @@
             </div>
         </div>
 
-        <!-- فلش‌های تزئینی اسلایدر شبیه به تصویر ارسالی شما -->
         <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex justify-center items-center transition-all hidden md:flex">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
@@ -172,7 +166,7 @@
         </button>
     </section>
 
-    <!-- بخش درباره ما (معرفی علمی و سوابق) -->
+    <!-- بخش درباره ما -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -183,30 +177,24 @@
                 <p class="text-gray-500 text-sm mt-3">معرفی کوتاه از سوابق تحصیلی، سوابق تدریس و رویکردهای علمی</p>
             </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-    
-    <div class="lg:col-span-5 relative">
-        <div class="absolute -top-4 -right-4 w-full h-full border-4 border-katebGold/30 rounded-lg -z-0"></div>
-        
-        <img src="47.jpg" 
-             alt="ابراهیم رضایی - سوابق تحصیلی و تدریس" 
-             class="w-full h-[380px] object-cover rounded-lg shadow-xl relative z-10 border-4 border-white"
-             onerror="this.src='https://placeholder.co/600x400/3d5e35/ffffff?text=Ebrahim+Rezaei'">
-    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-4 -right-4 w-full h-full border-4 border-katebGold/30 rounded-lg -z-0"></div>
+                    <img src="47.jpg" 
+                         alt="ابراهیم رضایی - سوابق تحصیلی و تدریس" 
+                         class="w-full h-[380px] object-cover rounded-lg shadow-xl relative z-10 border-4 border-white"
+                         onerror="this.src='https://placeholder.co/600x400/3d5e35/ffffff?text=Ebrahim+Rezaei'">
+                </div>
 
-</div>
-
-                <!-- متن درباره ما -->
                 <div class="lg:col-span-7 space-y-6">
                     <h3 class="text-2xl font-extrabold text-katebGreen">سوابق تحصیلی و تدریس</h3>
                     <p class="text-gray-600 leading-relaxed text-justify">
-                        ابراهیم رضایی، فارغ‌التحصیل ممتاز مقطع ماستری رشته حقوق خصوصی از دانشگاه معتبر اهل‌بیت (ع) تهران و یکی از مدرسان، کوشا و باسابقه در دانشکده حقوق دانشگاه کاتب کابل می‌باشد. وی در طول سال‌های فعالیت آکادمیک خود متمرکز بر پژوهش‌های مدرن حقوقی، حقوق تجارت بین‌الملل  و تعهدات مدنی بوده است.
+                        ابراهیم رضایی، فارغ‌التحصیل ممتاز مقطع ماستری رشته حقوق خصوصی از دانشگاه معتبر اهل‌بیت (ع) تهران و یکی از مدرسان، کوشا و باسابقه در دانشکده حقوق دانشگاه کاتب کابل می‌باشد. وی در طول سال‌های فعالیت آکادمیک خود متمرکز بر پژوهش‌های مدرن حقوقی، حقوق تجارت بین‌آلملل و تعهدات مدنی بوده است.
                     </p>
                     <p class="text-gray-600 leading-relaxed text-justify">
                         ایشان با ترکیب دانش تئوریک و مهارت‌های تدریس پویا، همواره در تلاش برای تربیت نسل جدید حقوق‌دانان متخصص و نوآور در کشور است.
                     </p>
 
-                    <!-- لیست مشخصات متمایز -->
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                         <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
                             <span class="w-6 h-6 bg-katebGold/20 rounded-full flex justify-center items-center text-katebGreen text-xs">✔</span>
@@ -228,55 +216,50 @@
                 </div>
             </div>
         </div>
-  <div class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-7 space-y-6 lg:order-1 order-2" style="direction: rtl;">
-                <h2 class="text-3xl font-bold text-katebGreen">سوابق اجرایی و مدیریتی</h2>
-                <p class="text-gray-600 leading-relaxed text-justify text-sm sm:text-base">
-                    تمرکز اصلی در این مسئولیت‌ها همواره بر ارتقای کیفیت آموزش، توسعه‌ی برنامه‌های درسی متناسب با نیازهای روز جامعه و تسهیل فرآیندهای اداری و آکادمیک بوده است.
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-                    
-                    <div class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
-                        <span class="text-sm font-medium text-gray-700">رئیس دانشکده حقوق دانشگاه کاتب</span>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
-                        <span class="text-sm font-medium text-gray-700">آمر دیپارتمنت حقوق</span>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
-                        <span class="text-sm font-medium text-gray-700">عضو کمیته تخصصی اصلاح نصاب حقوق در وزارت تحصیلات</span>
-                    </div>
-                    
-                    <div class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
-                        <span class="text-sm font-medium text-gray-700">عضو کمیته تخصصی تهیه پیش‌نویس قانون جمعیت‌ها در وزارت عدلیه</span>
-                    </div>
+    </section>
 
+    <!-- بخش سوابق اجرایی -->
+    <div class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 lg:order-1 order-2" style="direction: rtl;">
+                    <h2 class="text-3xl font-bold text-katebGreen">سوابق اجرایی و مدیریتی</h2>
+                    <p class="text-gray-600 leading-relaxed text-justify text-sm sm:text-base">
+                        تمرکز اصلی در این مسئولیت‌ها همواره بر ارتقای کیفیت آموزش، توسعه‌ی برنامه‌های درسی متناسب با نیازهای روز جامعه و تسهیل فرآیندهای اداری و آکادمیک بوده است.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
+                            <span class="text-sm font-medium text-gray-700">رئیس دانشکده حقوق دانشگاه کاتب</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
+                            <span class="text-sm font-medium text-gray-700">آمر دیپارتمنت حقوق</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
+                            <span class="text-sm font-medium text-gray-700">عضو کمیته تخصصی اصلاح نصاب حقوق</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-katebGreen/10 text-katebGreen flex justify-center items-center text-xs">✓</span>
+                            <span class="text-sm font-medium text-gray-700">عضو کمیته تهیه پیش‌نویس قانون جمعیت‌ها</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative lg:order-2 order-1">
+                    <div class="absolute -top-4 -left-4 w-full h-full border-4 border-katebGold/30 rounded-lg -z-0"></div>
+                    <img src="Profile.jpg" 
+                         alt="سوابق اجرایی" 
+                         class="w-full h-[380px] object-cover rounded-lg shadow-xl relative z-10 border-4 border-white"
+                         onerror="this.src='https://placeholder.co/600x400/3d5e35/ffffff?text=Executive'">
                 </div>
             </div>
-
-            <div class="lg:col-span-5 relative lg:order-2 order-1">
-                <div class="absolute -top-4 -left-4 w-full h-full border-4 border-katebGold/30 rounded-lg -z-0"></div>
-                <img src="Profile.jpg" 
-                     alt="سوابق اجرایی" 
-                     class="w-full h-[380px] object-cover rounded-lg shadow-xl relative z-10 border-4 border-white"
-                     onerror="this.src='[https://placeholder.co/600x400/3d5e35/ffffff?text=Executive](https://placeholder.co/600x400/3d5e35/ffffff?text=Executive)'">
-            </div>
-
         </div>
     </div>
-</div>
 
-        
-    <!-- بخش رویدادها (کارگاه‌ها، سخنرانی‌ها و سیمینارهای حقوقی) -->
+    <!-- بخش رویدادها -->
     <section id="events" class="py-20 bg-gray-50 border-y border-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -287,109 +270,63 @@
                 <p class="text-gray-500 text-sm mt-3">رویدادهای مرتبط با آموزش و پژوهش</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="max-w-4xl mx-auto p-4">
-    <ul class="space-y-3 bg-white rounded-xl shadow-sm border border-gray-100 p-2">
-        
-        <li onclick="openModal('عنوان رویداد اول', 'این متن مشروح و کامل رویداد اول است که شامل جزئیات بیشتر، زمان برگزاری و برنامه‌های جانبی می‌باشد.', '۱۴۰۵/۰۲/۱۰', 'کابل، دانشگاه کاتب', 'https://via.placeholder.com/600x400')" 
-            class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-200 cursor-pointer group">
-            
-            <div class="flex items-center gap-4">
-                <img src="https://via.placeholder.com/80" alt="رویداد" class="w-14 h-14 object-cover rounded-md border border-gray-100">
-                
-                <div>
-                    <span class="bg-katebGreen/10 text-katebGreen text-[10px] font-extrabold px-2 py-0.5 rounded-full block w-max mb-1">علمی</span>
-                    <h3 class="text-sm font-bold text-katebDark group-hover:text-katebGreen transition-colors">کارگاه پروپوزال نویسی و نگارش مقاله</h3>
-                </div>
-            </div>
+            <div class="max-w-4xl mx-auto p-4">
+                <ul class="space-y-3 bg-white rounded-xl shadow-sm border border-gray-100 p-2">
+                    <li onclick="openModal('کارگاه پروپوزال نویسی و نگارش مقاله', 'این متن مشروح و کامل رویداد اول است که شامل جزئیات بیشتر، زمان برگزاری و برنامه‌های جانبی می‌باشد.', '۱۴۰۵/۰۲/۱۰', 'کابل، دانشگاه کاتب', 'https://via.placeholder.com/600x400')" 
+                        class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-200 cursor-pointer group">
+                        <div class="flex items-center gap-4">
+                            <img src="https://via.placeholder.com/80" alt="رویداد" class="w-14 h-14 object-cover rounded-md border border-gray-100">
+                            <div>
+                                <span class="bg-katebGreen/10 text-katebGreen text-[10px] font-extrabold px-2 py-0.5 rounded-full block w-max mb-1">علمی</span>
+                                <h3 class="text-sm font-bold text-katebDark group-hover:text-katebGreen transition-colors">کارگاه پروپوزال نویسی و نگارش مقاله</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs text-gray-400">
+                            <span class="hidden sm:inline-block"><i class="fa-regular fa-calendar-days ml-1"></i> ۱۴۰۵/۰۲/۱۰</span>
+                            <i class="fa-solid fa-arrow-left text-katebGold group-hover:translate-x-[-4px] transition-transform text-[12px]"></i>
+                        </div>
+                    </li>
 
-            <div class="flex items-center gap-4 text-xs text-gray-400">
-                <span class="hidden sm:inline-block"><i class="fa-regular fa-calendar-days ml-1"></i> ۱۴۰۵/۰۲/۱۰</span>
-                <i class="fa-solid fa-arrow-left text-katebGold group-hover:translate-x-[-4px] transition-transform text-[12px]"></i>
-            </div>
-        </li>
-
-        <li onclick="openModal('عنوان رویداد دوم', 'مشروح متن رویداد دوم در این قسمت قرار می‌گیرد.', '۱۴۰۵/۰۲/۱۵', 'سالن همایش‌ها', 'https://via.placeholder.com/600x400')" 
-            class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-200 cursor-pointer group">
-            
-            <div class="flex items-center gap-4">
-                <img src="https://via.placeholder.com/80" alt="رویداد" class="w-14 h-14 object-cover rounded-md border border-gray-100">
-                <div>
-                    <span class="bg-katebGreen/10 text-katebGreen text-[10px] font-extrabold px-2 py-0.5 rounded-full block w-max mb-1">فرهنگی</span>
-                    <h3 class="text-sm font-bold text-katebDark group-hover:text-katebGreen transition-colors">نمایشگاه کتاب و دستاوردهای علمی</h3>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4 text-xs text-gray-400">
-                <span class="hidden sm:inline-block"><i class="fa-regular fa-calendar-days ml-1"></i> ۱۴۰۵/۰۲/۱۵</span>
-                <i class="fa-solid fa-arrow-left text-katebGold group-hover:translate-x-[-4px] transition-transform text-[12px]"></i>
-            </div>
-        </li>
-
-        </ul>
-</div>
-
-<div id="eventModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300" onclick="closeModal()">
-    <div class="bg-white rounded-xl shadow-xl max-w-lg w-full mx-4 overflow-hidden transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
-        
-        <img id="modalImage" src="" alt="تصویر رویداد" class="w-full h-48 object-cover">
-        
-        <div class="p-6">
-            <h3 id="modalTitle" class="text-lg font-black text-katebDark mb-3"></h3>
-            
-            <div class="flex gap-4 text-xs text-gray-500 mb-4 pb-3 border-b border-gray-100">
-                <span><i class="fa-regular fa-calendar-days text-katebGreen ml-1"></i> <span id="modalDate"></span></span>
-                <span><i class="fa-solid fa-location-dot text-katebGreen ml-1"></i> <span id="modalLocation"></span></span>
-            </div>
-            
-            <p id="modalDescription" class="text-gray-600 text-xs leading-relaxed mb-6 max-h-40 overflow-y-auto"></p>
-            
-            <div class="text-left">
-                <button onclick="closeModal()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-bold px-4 py-2 rounded-lg transition-colors">
-                    بستن پنجره
-                </button>
+                    <li onclick="openModal('نمایشگاه کتاب و دستاوردهای علمی', 'مشروح متن رویداد دوم در این قسمت قرار می‌گیرد.', '۱۴۰۵/۰۲/۱۵', 'سالن همایش‌ها', 'https://via.placeholder.com/600x400')" 
+                        class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-100 transition-all duration-200 cursor-pointer group">
+                        <div class="flex items-center gap-4">
+                            <img src="https://via.placeholder.com/80" alt="رویداد" class="w-14 h-14 object-cover rounded-md border border-gray-100">
+                            <div>
+                                <span class="bg-katebGreen/10 text-katebGreen text-[10px] font-extrabold px-2 py-0.5 rounded-full block w-max mb-1">فرهنگی</span>
+                                <h3 class="text-sm font-bold text-katebDark group-hover:text-katebGreen transition-colors">نمایشگاه کتاب و دستاوردهای علمی</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs text-gray-400">
+                            <span class="hidden sm:inline-block"><i class="fa-regular fa-calendar-days ml-1"></i> ۱۴۰۵/۰۲/۱۵</span>
+                            <i class="fa-solid fa-arrow-left text-katebGold group-hover:translate-x-[-4px] transition-transform text-[12px]"></i>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
 
-<script>
-function openModal(title, description, date, location, imageSrc) {
-    const modal = document.getElementById('eventModal');
-    const modalContent = modal.querySelector('.transform');
-    
-    // مقداردهی به عناصر داخل پاپ‌آپ
-    document.getElementById('modalTitle').innerText = title;
-    document.getElementById('modalDescription').innerText = description;
-    document.getElementById('modalDate').innerText = date;
-    document.getElementById('modalLocation').innerText = location;
-    document.getElementById('modalImage').src = imageSrc;
-    
-    // نمایش پاپ‌آپ با انیمیشن
-    modal.classList.remove('hidden');
-    setTimeout(() => {
-        modal.classList.remove('opacity-0');
-        modalContent.classList.remove('scale-95');
-        modalContent.classList.add('scale-100');
-    }, 10);
-}
-
-function closeModal() {
-    const modal = document.getElementById('eventModal');
-    const modalContent = modal.querySelector('.transform');
-    
-    modal.classList.add('opacity-0');
-    modalContent.classList.remove('scale-100');
-    modalContent.classList.add('scale-95');
-    
-    setTimeout(() => {
-        modal.classList.add('hidden');
-    }, 300);
-}
-</script>
+        <!-- پاپ آپ مودال رویدادها -->
+        <div id="eventModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300" onclick="closeModal()">
+            <div class="bg-white rounded-xl shadow-xl max-w-lg w-full mx-4 overflow-hidden transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+                <img id="modalImage" src="" alt="تصویر رویداد" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 id="modalTitle" class="text-lg font-black text-katebDark mb-3"></h3>
+                    <div class="flex gap-4 text-xs text-gray-500 mb-4 pb-3 border-b border-gray-100">
+                        <span><i class="fa-regular fa-calendar-days text-katebGreen ml-1"></i> <span id="modalDate"></span></span>
+                        <span><i class="fa-solid fa-location-dot text-katebGreen ml-1"></i> <span id="modalLocation"></span></span>
+                    </div>
+                    <p id="modalDescription" class="text-gray-600 text-xs leading-relaxed mb-6 max-h-40 overflow-y-auto"></p>
+                    <div class="text-left">
+                        <button onclick="closeModal()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-bold px-4 py-2 rounded-lg transition-colors">
+                            بستن پنجره
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- بخش تحقیقات و مقالات علمی (Publications) -->
+    <!-- بخش تحقیقات و مقالات علمی -->
     <section id="research" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -400,9 +337,7 @@ function closeModal() {
                 <p class="text-gray-500 text-sm mt-3">آرشیو آثار پژوهشی، کتب تالیف شده و مقالات کنفرانسی و ژورنالی</p>
             </div>
 
-            <!-- لیست مقالات با قابلیت کلیک و طراحی مدرن -->
             <div class="space-y-6 max-w-5xl mx-auto">
-                
                 <!-- مقاله ۱ -->
                 <div class="bg-katebBg p-6 rounded-lg border-r-4 border-katebGold shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div class="space-y-2">
@@ -430,7 +365,7 @@ function closeModal() {
                 <!-- مقاله ۳ -->
                 <div class="bg-katebBg p-6 rounded-lg border-r-4 border-katebGold shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div class="space-y-2">
-                        <span class="text-xs font-bold text-katebGreen bg-katebGreen/10 px-2 py-1 rounded">  دو فصلنامه علمی- تحقیقی حقوق کاتب</span>
+                        <span class="text-xs font-bold text-katebGreen bg-katebGreen/10 px-2 py-1 rounded">دو فصلنامه علمی- تحقیقی حقوق کاتب</span>
                         <h3 class="text-lg font-extrabold text-katebDark">نیابت قضایی تطبیقی میان کشورهای افغانستان، ایران و فرانسه</h3>
                         <p class="text-gray-500 text-xs">مقاله مشترک | سال انتشار: ۱۴۰۱</p>
                     </div>
@@ -438,12 +373,11 @@ function closeModal() {
                         <i class="fa-solid fa-book"></i> معرفی اثر و دسترسی
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- بخش آموزش و دروس تدریسی (Teaching) -->
+    <!-- بخش آموزش و دروس تدریسی -->
     <section id="teaching" class="py-20 bg-gray-50 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -454,7 +388,6 @@ function closeModal() {
                 <p class="text-gray-500 text-sm mt-3">برنامه کلاسی، سرفصل دروس (سیلابس) و منابع مورد نیاز دانشجویان</p>
             </div>
 
-            <!-- جدول شیک برنامه‌ها در مقطع لیسانس و ماستری -->
             <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
                 <div class="overflow-x-auto">
                     <table class="w-full text-right border-collapse">
@@ -469,8 +402,8 @@ function closeModal() {
                         <tbody class="divide-y divide-gray-100 text-sm">
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="p-4 font-bold text-katebDark">حقوق تجارت بین المللی</td>
-                                <td class="p-4 text-gray-600">کارشناسی ارشد  (ماستری)</td>
-                                <td class="p-4 text-gray-500">یکشنبه‌ها - ساعت 16:45:۰۰ الی 18:25</td>
+                                <td class="p-4 text-gray-600">کارشناسی ارشد (ماستری)</td>
+                                <td class="p-4 text-gray-500">یکشنبه‌ها - ساعت 16:45 الی 18:25</td>
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
                                         <i class="fa-solid fa-file-pdf"></i> دانلود PDF
@@ -479,7 +412,7 @@ function closeModal() {
                             </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="p-4 font-bold text-katebDark">حقوق تجارت بین‌الملل</td>
-                                <td class="p-4 text-gray-600">کارشناسی ارشد  (ماستری)</td>
+                                <td class="p-4 text-gray-600">کارشناسی ارشد (ماستری)</td>
                                 <td class="p-4 text-gray-500">دوشنبه‌ها - ساعت 16:45 الی 18:25</td>
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
@@ -494,35 +427,33 @@ function closeModal() {
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
                                         <i class="fa-solid fa-file-pdf"></i> دانلود PDF
-                                        
+                                    </a>
+                                </td>
+                            </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-4 font-bold text-katebDark">حقوق مدنی 1  </td>
+                                <td class="p-4 font-bold text-katebDark">حقوق مدنی 1</td>
                                 <td class="p-4 text-gray-600">کارشناسی ارشد (ماستری)</td>
                                 <td class="p-4 text-gray-500">چهارشنبه‌ها - ساعت 16:45 الی 18:25</td>
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
                                         <i class="fa-solid fa-file-pdf"></i> دانلود PDF
-                                        
+                                    </a>
+                                </td>
+                            </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-4 font-bold text-katebDark">متون فقه   </td>
+                                <td class="p-4 font-bold text-katebDark">متون فقه</td>
                                 <td class="p-4 text-gray-600">کارشناسی ارشد (ماستری)</td>
                                 <td class="p-4 text-gray-500">پنج‌شنبه‌ها - ساعت 16:45 الی 18:25</td>
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
                                         <i class="fa-solid fa-file-pdf"></i> دانلود PDF
-                                        
+                                    </a>
+                                </td>
+                            </tr>
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="p-4 font-bold text-katebDark">حقوق حمایت از مصرف کننده</td>
-                                <td class="p-4 text-gray-600">کارشناسی  (لیسانس )</td>
+                                <td class="p-4 text-gray-600">کارشناسی (لیسانس)</td>
                                 <td class="p-4 text-gray-500">شنبه‌ها - ساعت 16:45 الی 18:25</td>
-                                <td class="p-4 text-center">
-                                    <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
-                                        <i class="fa-solid fa-file-pdf"></i> دانلود PDF
-                                        
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-4 font-bold text-katebDark">حقوق فامیل 2</td>
-                                <td class="p-4 text-gray-600">کارشناسی  (لیسانس )</td>
-                                <td class="p-4 text-gray-500">شنبه‌ها - ساعت 18:30 الی 20:15</td>
                                 <td class="p-4 text-center">
                                     <a href="#" class="text-katebGreen hover:text-katebGold font-extrabold transition-colors flex items-center justify-center gap-1">
                                         <i class="fa-solid fa-file-pdf"></i> دانلود PDF
@@ -536,119 +467,48 @@ function closeModal() {
         </div>
     </section>
 
-    <!-- بخش تماس با ما و ارسال مستقیم پیام علمی -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-katebGreen relative inline-block pb-4">
-                    ارتباط مستقیم علمی
-                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-katebGold rounded"></span>
-                </h2>
-                <p class="text-gray-500 text-sm mt-3">جهت مشاوره تحصیلی، همکاری پژوهشی یا طرح سوال با من در ارتباط باشید</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-5xl mx-auto">
-                <!-- کارت‌های اطلاعات تماس سریع -->
-                <div class="lg:col-span-5 space-y-6">
-                    <div class="bg-gray-50 p-6 rounded-lg border-b-2 border-katebGreen flex items-center gap-4">
-                        <div class="w-12 h-12 bg-katebGreen/10 text-katebGreen rounded-full flex justify-center items-center text-xl shrink-0">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-sm font-black text-katebGreen mb-1">پست الکترونیکی</h4>
-                            <p class="text-xs text-gray-600 font-bold">I.rezaei@kateb.edu.af</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-lg border-b-2 border-katebGreen flex items-center gap-4">
-                        <div class="w-12 h-12 bg-katebGreen/10 text-katebGreen rounded-full flex justify-center items-center text-xl shrink-0">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-sm font-black text-katebGreen mb-1">دفتر اساتید</h4>
-                            <p class="text-xs text-gray-600 font-medium">کابل، دانشگاه کاتب، دانشکده حقوق </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-lg border-b-2 border-katebGreen flex items-center gap-4">
-                        <div class="w-12 h-12 bg-katebGreen/10 text-katebGreen rounded-full flex justify-center items-center text-xl shrink-0">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-sm font-black text-katebGreen mb-1">آی‌دی آکادمیک</h4>
-                            <p class="text-xs text-gray-600 font-medium">ResearchGate: Ibrahim_Rezaei</p>
-                        </div>
-                    </div>
-                </div>
-<div class="lg:col-span-7 bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
-    
-    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-        <input type="hidden" name="access_key" value="a4001bb4-0533-4ab2-be53-53c40da4e82c">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="space-y-1">
-                <label for="name" class="text-xs font-bold text-gray-700 block mb-1">نام و نام خانوادگی</label>
-                <input type="text" id="name" name="name" required placeholder="مثال: علی رضایی" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm">
-            </div>
-            
-            <div class="space-y-1">
-            <label for="email" class="text-xs font-bold text-gray-700 block mb-1">(ایمیل) پست الکترونیکی</label>
-            <input type="email" id="email" name="email" required placeholder="example@gmail.com" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen">
-        </div>
-    </div> <div class="space-y-1 mt-4">
-        <label for="subject" class="text-xs font-bold text-gray-700 block mb-1">موضوع</label>
-        <input type="text" id="subject" name="subject" required placeholder="موضوع پیام" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen">
-    </div>
-        
-    <div class="space-y-1 mt-4">
-        <label for="message" class="text-xs font-bold text-gray-700 block mb-1">متن پیام</label>
-        <textarea id="message" name="message" required placeholder="پیام خود را اینجا بنویسید..." rows="4" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen resize-none"></textarea>
-    </div>
-
-    <div class="pt-4">
-        <button type="submit" class="w-full bg-katebGreen text-white font-medium py-2.5 rounded hover:bg-opacity-90 transition text-sm cursor-pointer">
-            ارسال پیام
-        </button>
-    </div>
-
-        
-    </form>
-</div> </div> </div> </section> <footer class="bg-katebDark text-white/80 py-12 border-t-4 border-katebGold text-sm">
-    <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
-        <p class="font-bold">© تمامی حقوق مادی و معنوی متعلق به وب‌سایت علمی ابراهیم رضایی می‌باشد.</p>
-        <p class="text-xs text-white/50">©طراحی و توسعه یافته بر اساس مدل خواسته شده</p>
-        
-        <div class="flex justify-center gap-4 text-lg">
-            </div>
-    </div>
-</footer>
-
-</body>
-</html>    
-        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-researchgate"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-solid fa-graduation-cap"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- کدهای ساده جاوااسکریپت جهت مدیریت منوی موبایل -->
+    <!-- جاوا اسکریپت کنترلرها -->
     <script>
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // دکمه منوی همبرگری موبایل
+        const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // بستن خودکار منوی موبایل پس از کلیک روی یکی از لینک‌ها
-        const menuLinks = mobileMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
+        // توابع پاپ آپ رویدادها
+        function openModal(title, description, date, location, imageSrc) {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalDate').innerText = date;
+            document.getElementById('modalLocation').innerText = location;
+            document.getElementById('modalImage').src = imageSrc;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.clip
+                modal.classList.add('hidden');
+            }, 300);
+        }
     </script>
 </body>
 </html>
