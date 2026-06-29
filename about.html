@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta name="google-site-verification=-OLkTZS6m9PWyPe3mtS1PJSreEZAqqU3bUnWuix6tTI" />
+    <meta charset="UTF-8">
+    <title>وب‌سایت رسمی ابراهیم رضایی - مدرس دانشگاه کاتب</title>
+    
+    <!-- فونت استاندارد و فوق‌العاده زیبای وزیرمتن -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    
+    <!-- آیکون‌های جذاب و کاربردی FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- فریم‌ورک قدرتمند Tailwind CSS برای طراحی واکنش‌گرا و مدرن -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        katebGreen: '#3d5e35',  /* سبز زیتونی هماهنگ با عکس ارسالی */
+                        katebDark: '#283f22',
+                        katebGold: '#c5a059',   /* طلایی مات لوکس */
+                        katebBg: '#FAF8F5',     /* کرم استخوانی بسیار ملایم */
+                        katebText: '#2b2b2b'    /* زغالی تیره */
+                    },
+                    fontFamily: {
+                        vazir: ['Vazirmatn', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Vazirmatn', sans-serif;
+            color: #2b2b2b;
+        }
+        /* افکت شیشه‌ای نیمه شفاف برای کادر شناور اسلایدر شبیه به عکس ارسالی */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(8px);
+            border: 3px solid #ffffff;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* انیمیشن لود ملایم المان‌ها */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- نوار بالایی سایت (Top Bar) -->
+    <div class="bg-katebGreen text-white text-xs py-2 border-b border-katebGold">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-reverse space-x-4">
+                <span>به وب‌سایت علمی و پژوهشی ابراهیم رضایی خوش آمدید</span>
+                <span class="hidden md:inline-block text-white/60">|</span>
+                <a href="#contact" class="hidden md:inline-block hover:text-katebGold transition-colors"></a>
+            </div>
+            <div class="flex items-center space-x-reverse space-x-4">
+                <a href="#contact" class="hover:text-katebGold transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-envelope text-[10px]"></i> تماس با ما
+                </a>
+                <span>|</span>
+                <a href="#" class="hover:text-katebGold transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-globe text-[10px]"></i> English
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- هدر اصلی و منوی ناوبری کاملاً راست‌چین و رسپانسیو -->
+    <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <!-- لوگو و آیکون ترازوی عدالت / کتاب نماد حقوق و آموزش دانشگاه کاتب -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-katebGreen/10 rounded-full flex justify-center items-center text-katebGreen text-2xl shadow-inner relative">
+                    <i class="fa-solid fa-scale-balanced absolute z-0"></i>
+                    <img src="Profile.jpg" alt="Profile" class="w-full h-full rounded-full object-cover relative z-10 error-hide" onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-black text-katebGreen tracking-tight">وب‌سایت رسمی ابراهیم رضایی</h1>
+                    <p class="text-[10px] md:text-xs text-gray-500 font-medium">پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب</p>
+                </div>
+            </div>
+
+            <!-- منوی دسکتاپ -->
+            <nav class="hidden lg:flex">
+                <ul class="flex items-center space-x-reverse space-x-1 font-bold text-sm">
+                    <li><a href="#" class="px-3 py-2 text-katebGreen border-b-2 border-katebGold rounded transition-all">صفحه اصلی</a></li>
+                    <li><a href="#about" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">درباره ما</a></li>
+                    <li><a href="#events" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">رویدادها</a></li>
+                    <li><a href="#research" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">تحقیقات و مقالات</a></li>
+                    <li><a href="#teaching" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">دروس تدریسی</a></li>
+                    <li><a href="#contact" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">تماس با ما</a></li>
+                </ul>
+            </nav>
+
+            <!-- دکمه منوی موبایل (همبرگری) -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-katebGreen focus:outline-none hover:opacity-80 transition-opacity">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- منوی کشویی مخصوص موبایل -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 py-4 px-6 shadow-inner animate-fade-in">
+            <ul class="flex flex-col space-y-3 font-bold text-sm">
+                <li><a href="#" class="block py-2 text-katebGreen border-r-4 border-katebGold pr-2">صفحه اصلی</a></li>
+                <li><a href="#about" class="block py-2 text-gray-600 hover:text-katebGreen">درباره ما</a></li>
+                <li><a href="#events" class="block py-2 text-gray-600 hover:text-katebGreen">رویدادها</a></li>
+                <li><a href="#research" class="block py-2 text-gray-600 hover:text-katebGreen">تحقیقات و مقالات</a></li>
+                <li><a href="#teaching" class="block py-2 text-gray-600 hover:text-katebGreen">دروس تدریسی</a></li>
+                <li><a href="#contact" class="block py-2 text-gray-600 hover:text-katebGreen">تماس با ما</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- بخش بنر اصلی -->
+    <section class="relative h-[480px] md:h-[550px] bg-slate-800 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-40 scale-105 transition-transform duration-[10000ms] hover:scale-100" 
+             style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920&auto=format&fit=crop');">
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <div class="glass-panel p-8 md:p-14 rounded-lg border-2 border-white max-w-3xl mx-auto animate-fade-in">
+                <span class="text-katebGold text-xs md:text-sm font-black uppercase tracking-widest block mb-3">عضو هیات علمی دانشکده حقوق</span>
+                <h2 class="text-3xl md:text-5xl font-black text-katebGreen leading-tight mb-4">وب‌سایت رسمی ابراهیم رضایی</h2>
+                <div class="w-20 h-1 bg-katebGold mx-auto mb-5 rounded"></div>
+                <p class="text-gray-700 text-sm md:text-lg font-medium leading-relaxed">
+                    مدرس دانشگاه کاتب، پژوهشگر ارشد در حوزه حقوق خصوصی، حقوق تجارت بین الملل و فقه اسلامی 
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="bg-katebGreen hover:bg-katebDark text-white font-bold text-sm px-6 py-3 rounded-md shadow-md transition-all">بیشتر بدانید</a>
+                    <a href="#research" class="bg-white hover:bg-gray-50 border border-gray-300 text-katebGreen font-bold text-sm px-6 py-3 rounded-md shadow-sm transition-all">مشاهده تحقیقات علمی</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex justify-center items-center transition-all hidden md:flex">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex justify-center items-center transition-all hidden md:flex">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <!-- بخش درباره ما -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-katebGreen relative inline-block pb-4">
+                    درباره ما
+                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-katebGold rounded"></span>
+                </h2>
+                <p class="text-gray-500 text-sm mt-3">معرفی کوتاه از سوابق تحصیلی، سوابق تدریس و رویکردهای علمی</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-4 -right-4 w-full h-full border-4 border-katebGold/30 rounded-lg -z-0"></div>
+                    <img src="47.jpg" 
+                         alt="ابراهیم رضایی - سوابق تحصیلی و تدریس" 
+                         class="w-full h-[380px] object-cover rounded-lg shadow-xl relative z-10 border-4 border-white"
+                         onerror="this.src='https://placeholder.co/600x400/3d5e35/ffffff?text=Ebrahim+Rezaei'">
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="text-2xl font-extrabold text-katebGreen">سوابق تحصیلی و تدریس</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        ابراهیم رضایی، فارغ‌التحصیل ممتاز مقطع ماستری رشته حقوق خصوصی از دانشگاه معتبر اهل‌بیت (ع) تهران و یکی از مدرسان، کوشا و باسابقه در دانشکده حقوق دانشگاه کاتب کابل می‌باشد. وی در طول سال‌های فعالیت آکادمیک خود متمرکز بر پژوهش‌های مدرن حقوقی، حقوق تجارت بین‌آلملل و تعهدات مدنی بوده است.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        ایشان با ترکیب دانش تئوریک و مهارت‌های تدریس پویا، همواره در تلاش برای تربیت نسل جدید حقوق‌دانان متخصص و نوآور در کشور است.
+                    </p>
+
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                            <span class="w-6 h-6 bg-katebGold/20 rounded-full flex justify-center items-center text-katebGreen text-xs">✔</span>
+                            مدرس رسمی دانشکده حقوق دانشگاه کاتب
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                            <span class="w-6 h-6 bg-katebGold/20 rounded-full flex justify-center items-center text-katebGreen text-xs">✔</span>
+                            ماستری حقوق خصوصی از دانشگاه اهل‌بیت (ع)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                            <span class="w-6 h-6 bg-katebGold/20 rounded-full flex justify-center items-center text-katebGreen text-xs">✔</span>
+                            پژوهشگر حقوق تجارت بین‌المللی 
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-bold text-gray-700">
+                            <span class="w-6 h-6 bg-katebGold/20 rounded-full flex justify-center items-center text-katebGreen text-xs">✔</span>
+                            نویسنده کتب و مقالات تخصصی حقوقی
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
