@@ -203,4 +203,49 @@
         </div>
     </section>
 
+    <!-- جاوا اسکریپت کنترلرها -->
+    <script>
+        // دکمه منوی همبرگری موبایل
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // توابع پاپ آپ رویدادها
+        function openModal(title, description, date, location, imageSrc) {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalDate').innerText = date;
+            document.getElementById('modalLocation').innerText = location;
+            document.getElementById('modalImage').src = imageSrc;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.clip
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
   
