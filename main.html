@@ -201,3 +201,70 @@ Blame
     </section>
 
     
+
+    </form>
+</div> </div> </div> </section> <footer class="bg-katebDark text-white/80 py-12 border-t-4 border-katebGold text-sm">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
+        <p class="font-bold">© تمامی حقوق مادی و معنوی متعلق به وب‌سایت علمی ابراهیم رضایی می‌باشد.</p>
+        <p class="text-xs text-white/50">©طراحی و توسعه یافته بر اساس مدل خواسته شده</p>
+
+        <div class="flex justify-center gap-4 text-lg">
+            </div>
+            </div>
+</footer>
+
+</body>
+</html>    
+        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- جاوا اسکریپت کنترلرها -->
+    <script>
+        // دکمه منوی همبرگری موبایل
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // توابع پاپ آپ رویدادها
+        function openModal(title, description, date, location, imageSrc) {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalDate').innerText = date;
+            document.getElementById('modalLocation').innerText = location;
+            document.getElementById('modalImage').src = imageSrc;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('eventModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.clip
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
