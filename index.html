@@ -105,8 +105,12 @@
                     <p class="text-[10px] md:text-xs text-gray-500 font-medium">پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب</p>
                 </div>
             </div>
-<div class="relative hidden lg:block">
-    <input type="text" id="searchInput" onkeyup="searchSite()" placeholder="جستجو..." class="px-4 py-2 border rounded-full text-sm">
+<div class="relative hidden lg:flex items-center gap-2">
+    <input type="text" id="searchInput" placeholder="جستجو در سایت..." 
+           class="px-4 py-1.5 border border-katebGold rounded-full text-sm focus:outline-none">
+    <button onclick="performSearch()" class="bg-katebGreen text-white px-4 py-1.5 rounded-full text-sm hover:bg-katebDark transition-colors">
+        <i class="fa-solid fa-search"></i>
+    </button>
 </div>
             <!-- منوی دسکتاپ -->
                 <nav class="hidden lg:flex">
@@ -172,74 +176,13 @@
 
 </body>
 </html>    
-        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-brands fa-researchgate"></i></a>
-                <a href="#" class="w-10 h-10 bg-white/10 hover:bg-katebGold hover:text-katebDark rounded-full flex justify-center items-center transition-all text-white"><i class="fa-solid fa-graduation-cap"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- جاوا اسکریپت کنترلرها -->
-    <script>
-        // دکمه منوی همبرگری موبایل
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // توابع پاپ آپ رویدادها
-        function openModal(title, description, date, location, imageSrc) {
-            const modal = document.getElementById('eventModal');
-            const modalContent = modal.querySelector('.transform');
-            
-            document.getElementById('modalTitle').innerText = title;
-            document.getElementById('modalDescription').innerText = description;
-            document.getElementById('modalDate').innerText = date;
-            document.getElementById('modalLocation').innerText = location;
-            document.getElementById('modalImage').src = imageSrc;
-            
-            modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
-            }, 10);
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('eventModal');
-            const modalContent = modal.querySelector('.transform');
-            
-            modal.classList.add('opacity-0');
-            modalContent.classList.remove('scale-100');
-            modalContent.classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.clip
-                modal.classList.add('hidden');
-            }, 300);
-        }
-    </script>
-</body>
-</html>
-function searchSite() {
-    let input = document.getElementById('searchInput');
-    let filter = input.value.toUpperCase();
-    let ul = document.getElementById("searchList");
-    let li = ul.getElementsByTagName('li');
-    
-    ul.classList.remove('hidden');
-    if(filter === "") ul.classList.add('hidden');
-
-    for (let i = 0; i < li.length; i++) {
-        let a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
+      <script>
+function performSearch() {
+    let query = document.getElementById('searchInput').value;
+    if (query.trim() !== "") {
+        // در اینجا می‌توانید لینک صفحه نتایج جستجو را بدهید
+        // یا اگر می‌خواهید جستجو در گوگل انجام شود از کد زیر استفاده کنید:
+        window.location.href = "https://www.google.com/search?q=site:ibrahimrezaei.github.io+" + encodeURIComponent(query);
     }
 }
+</script>
