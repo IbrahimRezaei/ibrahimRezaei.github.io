@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta name="google-site-verification=-OLkTZS6m9PWyPe3mtS1PJSreEZAqqU3bUnWuix6tTI" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="-OLkTZS6m9PWyPe3mtS1PJSreEZAqqU3bUnWuix6tTI" />
     <title>وب‌سایت رسمی ابراهیم رضایی - مدرس دانشگاه کاتب</title>
     
-    <!-- فونت استاندارد و فوق‌العاده زیبای وزیرمتن -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    
-    <!-- آیکون‌های جذاب و کاربردی FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- فریم‌ورک قدرتمند Tailwind CSS برای طراحی واکنش‌گرا و مدرن -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -19,11 +15,11 @@
             theme: {
                 extend: {
                     colors: {
-                        katebGreen: '#3d5e35',  /* سبز زیتونی هماهنگ با عکس ارسالی */
+                        katebGreen: '#3d5e35',
                         katebDark: '#283f22',
-                        katebGold: '#c5a059',   /* طلایی مات لوکس */
-                        katebBg: '#FAF8F5',     /* کرم استخوانی بسیار ملایم */
-                        katebText: '#2b2b2b'    /* زغالی تیره */
+                        katebGold: '#c5a059',
+                        katebBg: '#FAF8F5',
+                        katebText: '#2b2b2b'
                     },
                     fontFamily: {
                         vazir: ['Vazirmatn', 'sans-serif']
@@ -44,39 +40,26 @@
             font-family: 'Vazirmatn', sans-serif;
             color: #2b2b2b;
         }
-        /* افکت شیشه‌ای نیمه شفاف برای کادر شناور اسلایدر شبیه به عکس ارسالی */
         .glass-panel {
             background: rgba(255, 255, 255, 0.94);
             backdrop-filter: blur(8px);
             border: 3px solid #ffffff;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-
-        /* انیمیشن لود ملایم المان‌ها */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-in {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
+        .animate-fade-in { animation: fadeInUp 0.8s ease-out forwards; }
     </style>
 </head>
 <body>
 
-    <!-- نوار بالایی سایت (Top Bar) -->
+    <!-- نوار بالایی -->
     <div class="bg-katebGreen text-white text-xs py-2 border-b border-katebGold">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center space-x-reverse space-x-4">
                 <span>مدرس دانشگاه کاتب، پژوهشگر ارشد در فقه اسلامی، حقوق خصوصی و حقوق تجارت بین الملل</span>
-                <span class="hidden md:inline-block text-white/60">|</span>
-                <a href="#contact" class="hidden md:inline-block hover:text-katebGold transition-colors"></a>
             </div>
             <div class="flex items-center space-x-reverse space-x-4">
                 <a href="contact.html" class="hover:text-katebGold transition-colors flex items-center gap-1">
@@ -90,122 +73,86 @@
         </div>
     </div>
 
-    <!-- هدر اصلی و منوی ناوبری کاملاً راست‌چین و رسپانسیو -->
+    <!-- هدر اصلی -->
     <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            
-            <!-- لوگو و آیکون ترازوی عدالت / کتاب نماد حقوق و آموزش دانشگاه کاتب -->
             <div class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-katebGreen/10 rounded-full flex justify-center items-center text-katebGreen text-2xl shadow-inner relative">
                     <i class="fa-solid fa-scale-balanced absolute z-0"></i>
-                    <img src="Profile.jpg" alt="Profile" class="w-full h-full rounded-full object-cover relative z-10 error-hide" onerror="this.style.display='none'">
+                    <img src="Profile.jpg" alt="Profile" class="w-full h-full rounded-full object-cover relative z-10" onerror="this.style.display='none'">
                 </div>
                 <div>
                     <h1 class="text-lg md:text-xl font-black text-katebGreen tracking-tight">وب‌سایت رسمی ابراهیم رضایی</h1>
                     <p class="text-[10px] md:text-xs text-gray-500 font-medium">پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب</p>
                 </div>
             </div>
-<div class="relative hidden lg:flex items-center gap-2">
-    <input type="text" id="searchInput" placeholder="جستجو در سایت..." 
-           class="px-4 py-1.5 border border-katebGold rounded-full text-sm focus:outline-none"
-           onkeydown="if(event.key==='Enter') performSearch()">
-    <button onclick="performSearch()" class="bg-katebGreen text-white px-4 py-1.5 rounded-full text-sm hover:bg-katebDark transition-colors">
-        <i class="fa-solid fa-search"></i>
-    </button>
-</div>
-            <!-- منوی دسکتاپ -->
+
+            <!-- جستجو و منو -->
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex items-center gap-2">
+                    <input type="text" id="searchInput" placeholder="جستجو در سایت..." class="px-4 py-1.5 border border-katebGold rounded-full text-sm focus:outline-none" onkeydown="if(event.key==='Enter') performSearch()">
+                    <button onclick="performSearch()" class="bg-katebGreen text-white px-4 py-1.5 rounded-full text-sm hover:bg-katebDark transition-colors">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+
                 <nav class="hidden lg:flex">
-                <ul class="flex items-center space-x-reverse space-x-1 font-bold text-sm">
-                    <li><a href="index.html" class="px-3 py-2 text-katebGreen rounded transition-all">صفحه اصلی</a></li>
-                  <li><a href="about.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">درباره ما</a></li>
-                    <li><a href="events.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">رویدادها</a></li>
-                    <li><a href="research.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">تحقیقات و مقالات</a></li>
-                    <li><a href="teaching.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">دروس تدریسی</a></li>
-                    <li><a href="contact.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen hover:bg-gray-50 rounded transition-all">تماس با ما</a></li>
-                </ul>
-            </nav>
-
-            <!-- دکمه منوی موبایل (همبرگری) -->
-            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-katebGreen focus:outline-none hover:opacity-80 transition-opacity">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+                    <ul class="flex items-center space-x-reverse space-x-1 font-bold text-sm">
+                        <li><a href="index.html" class="px-3 py-2 text-katebGreen rounded">صفحه اصلی</a></li>
+                        <li><a href="about.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">درباره ما</a></li>
+                        <li><a href="events.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">رویدادها</a></li>
+                        <li><a href="research.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">تحقیقات و مقالات</a></li>
+                        <li><a href="teaching.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">دروس تدریسی</a></li>
+                        <li><a href="contact.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">تماس با ما</a></li>
+                    </ul>
+                </nav>
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-katebGreen focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-<div class="w-full lg:w-auto flex items-center gap-2 px-3 lg:px-0">
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="جستجو در سایت..."
-        class="flex-1 lg:w-64 px-4 py-2 border border-katebGold rounded-full text-sm focus:outline-none"
-        onkeydown="if(event.key==='Enter') performSearch()">
 
-    <button
-        onclick="performSearch()"
-        class="bg-katebGreen text-white px-4 py-2 rounded-full text-sm hover:bg-katebDark transition-colors flex-shrink-0">
-        <i class="fa-solid fa-search"></i>
-    </button>
-</div>
-        <!-- منوی کشویی مخصوص موبایل -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 py-4 px-6 shadow-inner animate-fade-in">
+        <!-- منوی موبایل -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 py-4 px-6 shadow-inner">
+            <div class="mb-4">
+                 <input type="text" id="mobileSearchInput" placeholder="جستجو..." class="w-full px-4 py-2 border border-katebGold rounded-full text-sm mb-2" onkeydown="if(event.key==='Enter') performSearch('mobile')">
+            </div>
             <ul class="flex flex-col space-y-3 font-bold text-sm">
-                <li><a href="index.html" class="block py-2 text-katebGreen rounded">صفحه اصلی</a></li>
-              <li><a href="about.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen rounded">درباره ما</a></li>
-                <li><a href="events.html" class="block py-2 text-gray-600 hover:text-katebGreen">رویدادها</a></li>
-                <li><a href="research.html" class="block py-2 text-gray-600 hover:text-katebGreen">تحقیقات و مقالات</a></li>
-                <li><a href="teaching.html" class="block py-2 text-gray-600 hover:text-katebGreen">دروس تدریسی</a></li>
-                <li><a href="contact.html" class="block py-2 text-gray-600 hover:text-katebGreen">تماس با ما</a></li>
+                <li><a href="index.html" class="block py-2 text-katebGreen">صفحه اصلی</a></li>
+                <li><a href="about.html" class="block py-2 text-gray-600">درباره ما</a></li>
+                <li><a href="events.html" class="block py-2 text-gray-600">رویدادها</a></li>
+                <li><a href="research.html" class="block py-2 text-gray-600">تحقیقات و مقالات</a></li>
+                <li><a href="teaching.html" class="block py-2 text-gray-600">دروس تدریسی</a></li>
+                <li><a href="contact.html" class="block py-2 text-gray-600">تماس با ما</a></li>
             </ul>
         </div>
     </header>
 
-   <!-- بخش بنر اصلی -->
-<section class="relative h-[480px] md:h-[550px] bg-slate-800 flex items-center justify-center overflow-hidden">
-    <!-- در اینجا به جای لینک، نام فایل خود را قرار دهید -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-40 scale-105 transition-transform duration-[10000ms] hover:scale-100" 
-         style="background-image: url('55.jpg');">
-    </div>
-    
-    <!-- محتوای متنی شما می‌تواند اینجا قرار بگیرد -->
-    <div class="relative z-10 text-center">
-        <h2 class="text-white text-2xl md:text-4xl font-bold leading-loose shadow-text">قانون، نیاز اساسی جامعه در مسیر توسعه است و جامعه‌ی بی‌قانون،<br>راهی جز انحطاط و فروپاشی نظام اجتماعی پیش رو ندارد.</h2>
-    </div>
+    <!-- بخش بنر -->
+    <section class="relative h-[480px] md:h-[550px] bg-slate-800 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('55.jpg');"></div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-white text-2xl md:text-4xl font-bold leading-loose">قانون، نیاز اساسی جامعه در مسیر توسعه است و جامعه‌ی بی‌قانون،<br>راهی جز انحطاط و فروپاشی نظام اجتماعی پیش رو ندارد.</h2>
+        </div>
+    </section>
 
-    <!-- دکمه‌های ناوبری -->
-    <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex justify-center items-center transition-all hidden md:flex">
-        <i class="fa-solid fa-chevron-left"></i>
-    </button>
-    <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/20 hover:bg-black/40 text-white rounded-full flex justify-center items-center transition-all hidden md:flex">
-        <i class="fa-solid fa-chevron-right"></i>
-    </button>
-</section>
-    </form>
-</div> </div> </div> </section> <footer class="bg-katebDark text-white/80 py-12 border-t-4 border-katebGold text-sm">
-    <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
-        <p class="font-bold">© تمامی حقوق مادی و معنوی متعلق به وب‌سایت علمی ابراهیم رضایی می‌باشد.</p>
-        <p class="text-xs text-white/50">©طراحی و توسعه یافته بر اساس مدل خواسته شده</p>
+    <footer class="bg-katebDark text-white/80 py-12 border-t-4 border-katebGold text-sm">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
+            <p class="font-bold">© تمامی حقوق مادی و معنوی متعلق به وب‌سایت علمی ابراهیم رضایی می‌باشد.</p>
+        </div>
+    </footer>
 
-        <div class="flex justify-center gap-4 text-lg">
-            </div>
-            </div>
-</footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
 
-</body>
-</html>    
-      <script>
-function performSearch() {
-    let query = document.getElementById('searchInput').value;
-    if (query.trim() !== "") {
-        // در اینجا می‌توانید لینک صفحه نتایج جستجو را بدهید
-        // یا اگر می‌خواهید جستجو در گوگل انجام شود از کد زیر استفاده کنید:
-        window.location.href = "https://www.google.com/search?q=site:ibrahimrezaei.github.io+" + encodeURIComponent(query);
-    }
-}
-</script>
-<script>
-    function performSearch() {
-        let query = document.getElementById('searchInput').value;
-        if (query.trim() !== "") {
-            // هدایت کاربر به صفحه نتایج جستجوی گوگل برای سایت شما
-            window.open("https://www.google.com/search?q=site:ibrahimrezaei.github.io+" + encodeURIComponent(query), "_blank");
+        function performSearch(type) {
+            let query = (type === 'mobile') ? document.getElementById('mobileSearchInput').value : document.getElementById('searchInput').value;
+            if (query.trim() !== "") {
+                window.open("https://www.google.com/search?q=site:ibrahimrezaei.github.io+" + encodeURIComponent(query), "_blank");
+            }
         }
-    }
-</script>
+    </script>
+</body>
+</html>
