@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتایج جستجو | وبسایت رسمی ابراهیم رضایی</title>
+    <!-- لود فریم‌ورک Tailwind CSS و فونت‌آیکون برای آیکون سرچ -->
+    <script src="https://jsdelivr.net"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        /* رنگ‌های اختصاصی پروژه شما بر اساس تصاویر */
+        :root {
+            --katebGreen: #0d5231;
+            --katebDark: #062b19;
+            --katebGold: #c5a059;
+        }
+        .text-katebGreen { color: var(--katebGreen); }
+        .bg-katebGreen { background-color: var(--katebGreen); }
+        .hover\:bg-katebDark:hover { background-color: var(--katebDark); }
+        .border-katebGold { border-color: var(--katebGold); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
+    <!-- هدر سایت (مشابه صفحات دیگر شما) -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- عنوان و لوگو سایت -->
+            <div class="text-right">
+                <h1 class="text-lg md:text-xl font-black text-katebGreen tracking-tight">وبسایت رسمی ابراهیم رضایی</h1>
+                <p class="text-[10px] md:text-xs text-gray-500 font-medium mt-1">پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب</p>
+            </div>
+
+            <!-- بخش جستجو در منو -->
+            <div class="flex items-center gap-4">
+                <form action="search.html" method="GET" class="flex items-center gap-2">
+                    <input type="text" name="q" id="searchInput" placeholder="جستجو در سایت..." class="px-4 py-1.5 border border-katebGold rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="bg-katebGreen text-white px-4 py-1.5 rounded-full text-sm hover:bg-katebDark transition-colors cursor-pointer">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- منوی ناوبری دسکتاپ -->
+            <nav class="hidden lg:flex">
+                <ul class="flex items-center space-x-reverse space-x-4 font-bold text-sm">
+                    <li><a href="index.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">صفحه اصلی</a></li>
+                    <li><a href="about.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">درباره ما</a></li>
+                    <li><a href="events.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">رویدادها</a></li>
+                    <li><a href="research.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">تحقیقات و مقالات</a></li>
+                    <li><a href="teaching.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">دروس تدریسی</a></li>
+                    <li><a href="contact.html" class="px-3 py-2 text-gray-600 hover:text-katebGreen transition-all">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش اصلی نمایش نتایج جستجو -->
+    <main class="container mx-auto max-w-4xl p-6 my-8">
+        <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
+            <!-- عنوان نتایج -->
+            <h2 id="searchTitle" class="text-2xl font-bold mb-6 text-gray-800 border-b pb-4 border-gray-100">نتایج جستجو</h2>
+            
+            <!-- کانتینر اصلی نتایج یافت شده -->
+            <div id="searchResults" class="space-y-4">
+                <div class="text-center py-8 text-gray-400">
+                    <i class="fa-solid fa-spinner fa-spin text-2xl mb-2"></i>
+                    <p>در حال جستجو و پردازش نتایج...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- فوتر ساده سایت -->
+    <footer class="bg-gray-100 border-t border-gray-200 py-6 text-center text-xs text-gray-500 mt-20">
+        <p>© تمامی حقوق برای پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب محفوظ است.</p>
+    </footer>
+
+    <!-- اسکریپت اصلی و هوشمند جستجو -->
+    <script>
+        // بانک اطلاعاتی محتوای تمام فایل‌های HTML شما در پوشه پروژه
+        const siteData = [
+            { title: "صفحه اصلی پورتال", url: "index.html", content: "پورتال آموزشی و پژوهشی کادر حقوق دانشگاه کاتب وبسایت رسمی ابراهیم رضایی حقوق بین الملل حقوق تجارت" },
+            { title: "درباره ابراهیم رضایی", url: "about.html", content: "بیوگرافی رزومه علمی سوابق تحصیلی دانشگاهی کادر حقوق استاد دانشگاه کاتب مشخصات پروفایل سوابق کاری" },
+            { title: "رویدادها و اخبار علمی", url: "events.html", content: "اخبار جدید همایش ها سمینارها کارگاه های آموزشی رویدادهای علمی حقوقی نشست‌های تخصصی دانشگاه کاتب" },
+            { title: "تحقیقات، پژوهش‌ها و مقالات علمی", url: "research.html", content: "تحقیقات و مقالات علمی پژوهشی پروژه‌های تحقیقاتی کتاب‌ها پایان‌نامه‌ها مقالات حقوقی فقه و حقوق بین‌الملل" },
+            { title: "دروس تدریسی و جزوات", url: "teaching.html", content: "دروس تدریسی منابع آموزشی جزوات درسی حقوق برنامه زمانی کلاس‌ها اسلایدهای آموزشی دوره‌های تدریس شده" },
+            { title: "تماس با ما و راه‌های ارتباطی", url: "contact.html", content: "تماس با ما راه‌های ارتباطی آدرس ایمیل دانشگاهی شماره تماس فرم ارسال پیام مستقیم دانشگاه کاتب فضای مجازی" }
+        ];
+
+        // خواندن عبارت جستجو شده از URL مرورگر
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('q');
+        const resultsContainer = document.getElementById("searchResults");
+
+        if (searchQuery && searchQuery.trim() !== "") {
+            const cleanQuery = searchQuery.trim().toLowerCase();
+            
+            // به‌روزرسانی عنوان صفحه
+            document.getElementById("searchTitle").innerHTML = `نتایج جستجو برای: <span class="text-katebGreen">"${searchQuery}"</span>`;
+
+            // فیلتر کردن صفحات بر اساس کلمه وارد شده (در عنوان یا متن صفحه)
+            const filteredResults = siteData.filter(item => 
+                item.title.toLowerCase().includes(cleanQuery) || 
+                item.content.toLowerCase().includes(cleanQuery)
+            );
+
+            // خالی کردن لودینگ اولیه
+            resultsContainer.innerHTML = "";
+
+            if (filteredResults.length > 0) {
+                // رندر کردن صفحات پیدا شده در قالب کارت‌های شکیل
+                filteredResults.forEach(item => {
+                    resultsContainer.innerHTML += `
+                        <div class="p-5 border border-gray-100 rounded-lg bg-gray-50 hover:bg-white hover:border-katebGold hover:shadow-md transition-all duration-250">
+                            <a href="${item.url}" class="text-lg font-bold text-blue-700 hover:text-katebGreen hover:underline block mb-2">${item.title}</a>
+                            <p class="text-gray-600 text-sm leading-relaxed">${item.content} ...</p>
+                            <div class="mt-3 text-left">
+                                <a href="${item.url}" class="text-xs text-katebGreen font-semibold hover:underline">ورود به صفحه <i class="fa-solid fa-arrow-left mr-1 text-[10px]"></i></a>
+                            </div>
+                        </div>
+                    `;
+                });
+            } else {
+                // نمایش پیام خطای عدم یافتن نتیجه
+                resultsContainer.innerHTML = `
+                    <div class="text-center py-12 bg-gray-50 rounded-lg border border-dashed border-gray-200">
+                        <i class="fa-solid fa-magnifying-glass-blur text-gray-300 text-4xl mb-3"></i>
+                        <p class="text-gray-500 font-medium">متاسفانه هیچ نتیجه‌ای برای جستجوی شما در صفحات سایت یافت نشد.</p>
+                        <p class="text-xs text-gray-400 mt-2">لطفاً کلمات کلیدی دیگری (مانند: حقوق، مقالات، جزوه، کاتب) را امتحان کنید.</p>
+                    </div>
+                `;
+            }
+        } else {
+            // حالت خالی بودن کادر یا عدم وجود پارامتر جستجو
+            document.getElementById("searchTitle").innerText = "جستجو در سایت";
+            resultsContainer.innerHTML = `<p class="text-gray-500 text-center py-8">لطفاً کلمه‌ای را در کادر بالا برای جستجو وارد کنید.</p>`;
+        }
+    </script>
+</body>
+</html>
